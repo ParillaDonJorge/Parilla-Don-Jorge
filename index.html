@@ -44,22 +44,11 @@ h2 {
     color: #ff4d4d;
 }
 
-h3 {
-    margin-top: 25px;
-    color: #ccc;
-}
-
 .menu-item {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid gray;
     padding: 5px 0;
-}
-
-footer {
-    background: black;
-    text-align: center;
-    padding: 20px;
 }
 </style>
 </head>
@@ -71,139 +60,36 @@ footer {
     <p>Villarroel 1201 - Villa Crespo</p>
 </header>
 
-<nav>
-    <a href="#carnes">Carnes</a>
-    <a href="#achuras">Achuras</a>
-    <a href="#cocina">Cocina</a>
-    <a href="#bebidas">Bebidas</a>
-    <a href="#cervezas">Cervezas</a>
-    <a href="#ensaladas">Ensaladas</a>
-    <a href="#postres">Postres</a>
-    <a href="#vinos">Vinos</a>
-    <a href="#contacto">Contacto</a>
-</nav>
-
-<section id="carnes">
+<section>
 <h2>Nuestras carnes</h2>
-<div class="menu-item"><span>Asado</span><span>$38000 / $29000</span></div>
-<div class="menu-item"><span>Vacío</span><span>$36000 / $29000</span></div>
-<div class="menu-item"><span>Entraña</span><span>$39000 / $28000</span></div>
-<div class="menu-item"><span>Colita de cuadril</span><span>$35000 / $28000</span></div>
-<div class="menu-item"><span>Bife de chorizo</span><span>$45000 / $30000</span></div>
-<div class="menu-item"><span>Ojo de bife</span><span>$45000 / $30000</span></div>
-<div class="menu-item"><span>Matambre tiernizado</span><span>$35000 / $27000</span></div>
-<div class="menu-item"><span>Bondiola</span><span>$29000 / $24000</span></div>
-<div class="menu-item"><span>Matambrito de cerdo</span><span>$37000 / $27000</span></div>
-<div class="menu-item"><span>Matambre a la pizza</span><span>$65000 / $40000</span></div>
-<div class="menu-item"><span>Pechuga de pollo</span><span>$13000</span></div>
-<div class="menu-item"><span>Picaña</span><span>$35000 / $28000</span></div>
-</section>
 
-<section id="achuras">
-<h2>Achuras</h2>
-<div class="menu-item"><span>Chinchulín</span><span>$19000 / $14000</span></div>
-<div class="menu-item"><span>Mollejas</span><span>$25000 / $18000</span></div>
-<div class="menu-item"><span>Chorizo (uno)</span><span>$10000</span></div>
-<div class="menu-item"><span>Morcilla (uno)</span><span>$10000</span></div>
-<div class="menu-item"><span>Provoleta</span><span>$17000</span></div>
-<div class="menu-item"><span>Morrón a la brasa</span><span>$6000</span></div>
-</section>
+<div class="menu-item">
+  <span>Asado</span>
+  <span><span id="asado_grande"></span> / <span id="asado_chico"></span></span>
+</div>
 
-<section id="cocina">
-<h2>Cocina</h2>
-<div class="menu-item"><span>Papas fritas grandes</span><span>$14000</span></div>
-<div class="menu-item"><span>Papas fritas medianas</span><span>$12000</span></div>
-<div class="menu-item"><span>Papas fritas chicas</span><span>$9000</span></div>
-<div class="menu-item"><span>Milanesa con papas fritas</span><span>$18000</span></div>
-<div class="menu-item"><span>Empanada frita de carne</span><span>$3000</span></div>
-<div class="menu-item"><span>Huevo frito</span><span>$2000</span></div>
-</section>
+<div class="menu-item">
+  <span>Vacío</span>
+  <span><span id="vacio_grande"></span> / <span id="vacio_chico"></span></span>
+</div>
 
-<section id="bebidas">
-<h2>Bebidas</h2>
-<div class="menu-item"><span>Gaseosa</span><span>$6000 / $9000</span></div>
-<div class="menu-item"><span>Aquarius</span><span>$5000 / $8000</span></div>
-<div class="menu-item"><span>Agua</span><span>$5000</span></div>
-</section>
+<div class="menu-item">
+  <span>Entraña</span>
+  <span><span id="entrana_grande"></span> / <span id="entrana_chico"></span></span>
+</div>
 
-<section id="cervezas">
-<h2>Cervezas</h2>
-<div class="menu-item"><span>Quilmes litro</span><span>$10000</span></div>
-<div class="menu-item"><span>Stella litro</span><span>$13000</span></div>
-<div class="menu-item"><span>Andes litro</span><span>$11000</span></div>
-<div class="menu-item"><span>Corona 710cc</span><span>$11000</span></div>
-<div class="menu-item"><span>Corona porrón</span><span>$7000</span></div>
-</section>
+<div class="menu-item">
+  <span>Bife de chorizo</span>
+  <span><span id="bife_grande"></span> / <span id="bife_chico"></span></span>
+</div>
 
-<section id="ensaladas">
-<h2>Ensaladas</h2>
-<div class="menu-item"><span>Mixta (3 gustos)</span><span>$14000 / $10000</span></div>
-<div class="menu-item"><span>Rucula y parmesano</span><span>$19000 / $15000</span></div>
-<div class="menu-item"><span>Ensalada rusa</span><span>$18000 / $12000</span></div>
-</section>
-
-<section id="postres">
-<h2>Postres</h2>
-<div class="menu-item"><span>Flan casero</span><span>$9000</span></div>
-<div class="menu-item"><span>Budín de pan casero</span><span>$13000</span></div>
-<div class="menu-item"><span>Bombón suizo o escocés</span><span>$11000</span></div>
-<div class="menu-item"><span>Charlotte</span><span>$12000</span></div>
-<div class="menu-item"><span>Almendrado</span><span>$12000</span></div>
-<div class="menu-item"><span>Queso y dulce</span><span>$15000</span></div>
-<div class="menu-item"><span>Panqueques de dulce (2)</span><span>$18000</span></div>
-</section>
-
-<section id="vinos">
-<h2>Nuestros Vinos</h2>
-
-<h3>Bodega Nieto Senetiner</h3>
-<div class="menu-item"><span>Benjamin Malbec</span><span>$9000</span></div>
-<div class="menu-item"><span>Nieto Senetiner Malbec</span><span>$11000</span></div>
-<div class="menu-item"><span>Emilia Malbec</span><span>$9000</span></div>
-<div class="menu-item"><span>Fran Malbec</span><span>$9000</span></div>
-
-<h3>Bodega Trapiche</h3>
-<div class="menu-item"><span>Alaris Malbec</span><span>$7000</span></div>
-<div class="menu-item"><span>Fond de Cave</span><span>$13000</span></div>
-<div class="menu-item"><span>Fond de Cave Reserva</span><span>$18000</span></div>
-<div class="menu-item"><span>Trapiche Reserva</span><span>$18000</span></div>
-
-<h3>Bodega Navarro Correas</h3>
-<div class="menu-item"><span>Navarro Correas Reserva</span><span>$20000</span></div>
-<div class="menu-item"><span>Los Árboles Malbec</span><span>$8000</span></div>
-
-<h3>Bodega Finca Las Moras</h3>
-<div class="menu-item"><span>Los Intocables Malbec</span><span>$17000</span></div>
-<div class="menu-item"><span>Alma Mora Malbec</span><span>$8000</span></div>
-<div class="menu-item"><span>Dada 1 Malbec</span><span>$7000</span></div>
-
-<h3>Vinos blancos</h3>
-<div class="menu-item"><span>Benjamin Chardonnay</span><span>$8500</span></div>
-<div class="menu-item"><span>Emilia Chardonnay</span><span>$9000</span></div>
-<div class="menu-item"><span>Nina Chardonnay</span><span>$15000</span></div>
-<div class="menu-item"><span>San Huberto Chardonnay</span><span>$7000</span></div>
-
-<h3>Vinos chicos</h3>
-<div class="menu-item"><span>San Huberto Malbec</span><span>$6000</span></div>
-<div class="menu-item"><span>Trumpeter Malbec</span><span>$10000</span></div>
-<div class="menu-item"><span>Nieto Senetiner Malbec</span><span>$6000</span></div>
-<div class="menu-item"><span>Benjamin Malbec</span><span>$5500</span></div>
-<div class="menu-item"><span>Nina Malbec</span><span>$8500</span></div>
-<div class="menu-item"><span>Rutini Cab Malbec</span><span>$19000</span></div>
-<div class="menu-item"><span>Rutini Malbec</span><span>$27000</span></div>
-<div class="menu-item"><span>Copa de la casa</span><span>$4000</span></div>
+<div class="menu-item">
+  <span>Pechuga de pollo</span>
+  <span id="pollo"></span>
+</div>
 
 </section>
 
-<section id="contacto">
-<h2>Contacto</h2>
-<p>📍 Villarroel 1201, CABA</p>
-<p>📞 011 4857-3403</p>
-</section>
-
-<footer>
-<p>© 2026 Parrilla Don Jorge</p>
-</footer>
 <script>
 fetch('precios.json')
   .then(r => r.json())
@@ -214,5 +100,6 @@ fetch('precios.json')
     }
   });
 </script>
+
 </body>
 </html>
