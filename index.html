@@ -204,6 +204,15 @@ footer {
 <footer>
 <p>© 2026 Parrilla Don Jorge</p>
 </footer>
-
+<script>
+fetch('precios.json')
+  .then(r => r.json())
+  .then(data => {
+    for (let key in data) {
+      let el = document.getElementById(key);
+      if (el) el.innerText = "$" + data[key];
+    }
+  });
+</script>
 </body>
 </html>
