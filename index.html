@@ -19,10 +19,6 @@ header {
     text-align: center;
 }
 
-header h1 {
-    font-size: 50px;
-}
-
 nav {
     background: #8B0000;
     padding: 15px;
@@ -44,6 +40,11 @@ h2 {
     color: #ff4d4d;
 }
 
+h3 {
+    margin-top: 25px;
+    color: #ccc;
+}
+
 .menu-item {
     display: flex;
     justify-content: space-between;
@@ -56,37 +57,135 @@ h2 {
 <body>
 
 <header>
-    <h1>Parrilla Don Jorge</h1>
-    <p>Villarroel 1201 - Villa Crespo</p>
+<h1>Parrilla Don Jorge</h1>
+<p>Villarroel 1201 - Villa Crespo</p>
 </header>
 
-<section>
+<nav>
+<a href="#carnes">Carnes</a>
+<a href="#achuras">Achuras</a>
+<a href="#cocina">Cocina</a>
+<a href="#bebidas">Bebidas</a>
+<a href="#cervezas">Cervezas</a>
+<a href="#ensaladas">Ensaladas</a>
+<a href="#postres">Postres</a>
+<a href="#vinos">Vinos</a>
+</nav>
+
+<section id="carnes">
 <h2>Nuestras carnes</h2>
 
-<div class="menu-item">
-  <span>Asado</span>
-  <span><span id="asado_grande"></span> / <span id="asado_chico"></span></span>
-</div>
+<div class="menu-item"><span>Asado</span><span><span id="asado_grande"></span> / <span id="asado_chico"></span></span></div>
+<div class="menu-item"><span>Vacío</span><span><span id="vacio_grande"></span> / <span id="vacio_chico"></span></span></div>
+<div class="menu-item"><span>Entraña</span><span><span id="entrana_grande"></span> / <span id="entrana_chico"></span></span></div>
+<div class="menu-item"><span>Colita de cuadril</span><span><span id="colita_grande"></span> / <span id="colita_chico"></span></span></div>
+<div class="menu-item"><span>Bife de chorizo</span><span><span id="bife_grande"></span> / <span id="bife_chico"></span></span></div>
+<div class="menu-item"><span>Ojo de bife</span><span><span id="ojo_grande"></span> / <span id="ojo_chico"></span></span></div>
+<div class="menu-item"><span>Matambre tiernizado</span><span><span id="matambre_grande"></span> / <span id="matambre_chico"></span></span></div>
+<div class="menu-item"><span>Bondiola</span><span><span id="bondiola_grande"></span> / <span id="bondiola_chico"></span></span></div>
+<div class="menu-item"><span>Matambrito de cerdo</span><span><span id="matambrito_grande"></span> / <span id="matambrito_chico"></span></span></div>
+<div class="menu-item"><span>Matambre a la pizza</span><span><span id="matambre_pizza_grande"></span> / <span id="matambre_pizza_chico"></span></span></div>
+<div class="menu-item"><span>Pechuga de pollo</span><span id="pollo"></span></div>
+<div class="menu-item"><span>Picaña</span><span><span id="picania_grande"></span> / <span id="picania_chico"></span></span></div>
+</section>
 
-<div class="menu-item">
-  <span>Vacío</span>
-  <span><span id="vacio_grande"></span> / <span id="vacio_chico"></span></span>
-</div>
+<section id="achuras">
+<h2>Achuras</h2>
 
-<div class="menu-item">
-  <span>Entraña</span>
-  <span><span id="entrana_grande"></span> / <span id="entrana_chico"></span></span>
-</div>
+<div class="menu-item"><span>Chinchulín</span><span><span id="chinchulin_grande"></span> / <span id="chinchulin_chico"></span></span></div>
+<div class="menu-item"><span>Mollejas</span><span><span id="mollejas_grande"></span> / <span id="mollejas_chico"></span></span></div>
+<div class="menu-item"><span>Chorizo</span><span id="chorizo"></span></div>
+<div class="menu-item"><span>Morcilla</span><span id="morcilla"></span></div>
+<div class="menu-item"><span>Provoleta</span><span id="provoleta"></span></div>
+<div class="menu-item"><span>Morrón a la brasa</span><span id="morron"></span></div>
+</section>
 
-<div class="menu-item">
-  <span>Bife de chorizo</span>
-  <span><span id="bife_grande"></span> / <span id="bife_chico"></span></span>
-</div>
+<section id="cocina">
+<h2>Cocina</h2>
 
-<div class="menu-item">
-  <span>Pechuga de pollo</span>
-  <span id="pollo"></span>
-</div>
+<div class="menu-item"><span>Papas fritas grandes</span><span id="papas_grandes"></span></div>
+<div class="menu-item"><span>Papas fritas medianas</span><span id="papas_medianas"></span></div>
+<div class="menu-item"><span>Papas fritas chicas</span><span id="papas_chicas"></span></div>
+<div class="menu-item"><span>Milanesa con papas</span><span id="milanesa_papas"></span></div>
+<div class="menu-item"><span>Empanada frita</span><span id="empanada"></span></div>
+<div class="menu-item"><span>Huevo frito</span><span id="huevo"></span></div>
+</section>
+
+<section id="bebidas">
+<h2>Bebidas</h2>
+
+<div class="menu-item"><span>Gaseosa</span><span><span id="gaseosa_chica"></span> / <span id="gaseosa_grande"></span></span></div>
+<div class="menu-item"><span>Aquarius</span><span><span id="aquarius_chico"></span> / <span id="aquarius_grande"></span></span></div>
+<div class="menu-item"><span>Agua</span><span id="agua"></span></div>
+</section>
+
+<section id="cervezas">
+<h2>Cervezas</h2>
+
+<div class="menu-item"><span>Quilmes litro</span><span id="quilmes"></span></div>
+<div class="menu-item"><span>Stella litro</span><span id="stella"></span></div>
+<div class="menu-item"><span>Andes litro</span><span id="andes"></span></div>
+<div class="menu-item"><span>Corona 710cc</span><span id="corona_710"></span></div>
+<div class="menu-item"><span>Corona porrón</span><span id="corona_porron"></span></div>
+</section>
+
+<section id="ensaladas">
+<h2>Ensaladas</h2>
+
+<div class="menu-item"><span>Mixta</span><span><span id="mixta_grande"></span> / <span id="mixta_chica"></span></span></div>
+<div class="menu-item"><span>Rúcula y parmesano</span><span><span id="rucula_grande"></span> / <span id="rucula_chica"></span></span></div>
+<div class="menu-item"><span>Rusa</span><span><span id="rusa_grande"></span> / <span id="rusa_chica"></span></span></div>
+</section>
+
+<section id="postres">
+<h2>Postres</h2>
+
+<div class="menu-item"><span>Flan casero</span><span id="flan"></span></div>
+<div class="menu-item"><span>Budín de pan</span><span id="budin"></span></div>
+<div class="menu-item"><span>Bombón</span><span id="bombon"></span></div>
+<div class="menu-item"><span>Charlotte</span><span id="charlotte"></span></div>
+<div class="menu-item"><span>Almendrado</span><span id="almendrado"></span></div>
+<div class="menu-item"><span>Queso y dulce</span><span id="queso_dulce"></span></div>
+<div class="menu-item"><span>Panqueques</span><span id="panqueques"></span></div>
+</section>
+
+<section id="vinos">
+<h2>Vinos</h2>
+
+<h3>Bodega Nieto Senetiner</h3>
+<div class="menu-item"><span>Benjamin Malbec</span><span id="benjamin"></span></div>
+<div class="menu-item"><span>Nieto Senetiner Malbec</span><span id="nieto"></span></div>
+<div class="menu-item"><span>Emilia Malbec</span><span id="emilia"></span></div>
+<div class="menu-item"><span>Fran Malbec</span><span id="fran"></span></div>
+
+<h3>Bodega Trapiche</h3>
+<div class="menu-item"><span>Alaris Malbec</span><span id="alaris"></span></div>
+<div class="menu-item"><span>Fond de Cave</span><span id="fond"></span></div>
+<div class="menu-item"><span>Fond Reserva</span><span id="fond_reserva"></span></div>
+<div class="menu-item"><span>Trapiche Reserva</span><span id="trapiche"></span></div>
+
+<h3>Otros</h3>
+<div class="menu-item"><span>Navarro Correas</span><span id="navarro"></span></div>
+<div class="menu-item"><span>Los Árboles</span><span id="arboles"></span></div>
+<div class="menu-item"><span>Intocables</span><span id="intocables"></span></div>
+<div class="menu-item"><span>Alma Mora</span><span id="alma"></span></div>
+<div class="menu-item"><span>Dada</span><span id="dada"></span></div>
+
+<h3>Blancos</h3>
+<div class="menu-item"><span>Benjamin Chardonnay</span><span id="chardonnay_benjamin"></span></div>
+<div class="menu-item"><span>Emilia Chardonnay</span><span id="chardonnay_emilia"></span></div>
+<div class="menu-item"><span>Nina Chardonnay</span><span id="chardonnay_nina"></span></div>
+<div class="menu-item"><span>San Huberto Chardonnay</span><span id="chardonnay_huberto"></span></div>
+
+<h3>Chicos</h3>
+<div class="menu-item"><span>Huberto</span><span id="vino_chico_huberto"></span></div>
+<div class="menu-item"><span>Trumpeter</span><span id="vino_chico_trumpeter"></span></div>
+<div class="menu-item"><span>Nieto</span><span id="vino_chico_nieto"></span></div>
+<div class="menu-item"><span>Benjamin</span><span id="vino_chico_benjamin"></span></div>
+<div class="menu-item"><span>Nina</span><span id="vino_chico_nina"></span></div>
+<div class="menu-item"><span>Rutini Cab</span><span id="rutini_cab"></span></div>
+<div class="menu-item"><span>Rutini</span><span id="rutini"></span></div>
+<div class="menu-item"><span>Copa</span><span id="copa"></span></div>
 
 </section>
 
